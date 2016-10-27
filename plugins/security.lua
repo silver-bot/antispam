@@ -911,7 +911,7 @@ if is_chat_msg(msg) or is_super_group(msg) then
 			return "Hello dear ["..msg.from.print_name.."], welcome to "..msg.to.print_name.."\nThanks for /start me :)\n"
 	    end
     end
-    if msg.text:match("^[!/#][Aa][Dd][Vv][Aa][Nn]$") then
+    if msg.text:match("^[!/#][Tt][Aa][Rr][Ff][Aa][Nn][Dd]$") then
     	txt = _config.about_text
     	send_msg(get_receiver(msg), txt, ok_cb, false)
     end
