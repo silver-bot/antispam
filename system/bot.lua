@@ -234,18 +234,11 @@ function create_config( )
     "tools"
     },
     vip_users = {}, --vip users
-    sudo_users = {111984481,204876190,67647823,tonumber(our_id)},--Sudo users
+    sudo_users = {22298441,44487610,33347823,tonumber(our_id)},--Sudo users
     support_gp = {},--Support id
     moderation = {data = 'data/adv.json'},
     about_text = [[*IN THE NAME OF ALLAH*
-This is an original bot and based on (AdvanSource, version 4 final).
-Copyright all right reserved and you must respect all laws.
-
-Source: https://github.com/janlou/AdvanSource
-Channel: @AdvanTm
-Messenger: @Advanbot
-Creator: @janlou
-Site: http://StoreVps.ir
+This is an original bot and based on (version 4 final).
 ]],
     --Start rate:
     Group_rate = [[]],
