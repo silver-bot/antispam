@@ -94,26 +94,26 @@ function run(msg, matches)
 				    if not redis:get("sp:lang") then
 					    return error
 				    elseif redis:get("sp:lang") == "fa" then
-					    help = http.request("http://www.folder98.ir/1395/05/1473700489.txt")
+					    help = http.request("http://bayanbox.ir/view/5471839359323765817/1473700489.txt")
 						return help
 					elseif redis:get("sp:lang") == "en" then
-					    help = http.request("http://www.folder98.ir/1395/05/1473726399.txt")
+					    help = http.request("http://bayanbox.ir/view/2464499846575247722/1473726399.txt")
 						return help
 				    elseif redis:get("sp:lang") == "فا" then
-					    help = http.request("http://www.folder98.ir/1395/05/1473703817.txt")
+					    help = http.request("http://bayanbox.ir/view/4775156283001435341/1473703817.txt")
 						return help
 					end
 				elseif msg.to.type == "chat" then
 				    if not redis:get("gp:lang") then
 					    return error
 				    elseif redis:get("gp:lang") == "fa" then
-					    help = http.request("http://www.folder98.ir/1395/05/1473685968.txt")
+					    help = http.request("http://bayanbox.ir/view/5626928239319986321/1473685968.txt")
 						return help
 					elseif redis:get("gp:lang") == "en" then
-					    help = http.request("http://www.folder98.ir/1395/05/1473743959.txt")
+					    help = http.request("http://bayanbox.ir/view/4738545992192475713/1473743959.txt")
 						return help
 				    elseif redis:get("gp:lang") == "فا" then
-					    help = http.request("http://www.folder98.ir/1395/05/1473704736.txt")
+					    help = http.request("http://bayanbox.ir/view/733616325716785386/1473704736.txt")
 						return help
 					end
 				end
@@ -163,7 +163,7 @@ function run(msg, matches)
 	end
 end
 return {
-advan = "http://github.com/janlou/AdvanSource",
+advan = "https://github.com/Tarfand-pro/css",
 patterns = {"^[!#/](help)$","^[!#/]([Ss]ethelp) (.*)$","^[!#/](delhelp)$"},
 run = run,
 }
