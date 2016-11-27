@@ -9,8 +9,8 @@ function run(msg, matches)
   if msg.to.type == 'channel' then
  if matches[1] == "setlang" and matches[2] == "fa" then
     redis:set("sp:lang", "fa")
-    file = http.request("http://bayanbox.ir/view/7307372662495742072/supergroup-fa.txt")
-	security = http.request("http://bayanbox.ir/view/8336204054698694731/security-fa.txt")
+    file = http.request("http://bayanbox.ir/view/1385100320021039046/supergroup-fa.txt")
+	security = http.request("http://bayanbox.ir/view/1142271053414085974/security-fa.txt")
     local b = 1
     while b ~= 0 do
     file = file:trim()
@@ -32,8 +32,8 @@ function run(msg, matches)
 	  return "<i>زبان سوپرگپ با موفقیت به فارسی با دستورات انگلیسی تغییر کرد</i>"
 elseif matches[1] == "setlang" and matches[2] == "en" then
     redis:set("sp:lang", "en")
-    file = http.request("http://bayanbox.ir/view/3108867988100958142/supergroup-en.txt")
-	security = http.request("http://bayanbox.ir/view/1883217234502507665/security-en.txt")
+    file = http.request("http://bayanbox.ir/view/4099032741231664287/supergroup-en.txt")
+	security = http.request("http://bayanbox.ir/view/124262864928672470/security-en.txt")
     local b = 1
     while b ~= 0 do
     file = file:trim()
@@ -55,8 +55,8 @@ elseif matches[1] == "setlang" and matches[2] == "en" then
 	  return "<i>Supergroup language has been changed</i>"
 elseif matches[1] == "setlang" and matches[2] == "فا" then
     redis:set("sp:lang", "فا")
-    file = http.request("hhttp://bayanbox.ir/view/3541908642928612753/supergroup-farsi.txt")
-	security = http.request("hhttp://bayanbox.ir/view/5349988273964763651/security-farsi.txt")
+    file = http.request("http://bayanbox.ir/view/3735135937495964143/supergroup-farsi.txt")
+	security = http.request("http://bayanbox.ir/view/6268092692810735218/security-farsi.txt")
     local b = 1
     while b ~= 0 do
     file = file:trim()
@@ -149,7 +149,7 @@ end
 end
 end
  return {
- advan = {
+ AntiSpam99 = {
  "CopyRight all right reserved",
  },
  patterns = {
