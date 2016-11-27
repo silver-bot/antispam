@@ -234,6 +234,8 @@ function create_config( )
     "tools",
     "chat",
     "semat",
+    "mute-all",
+    "time",
     "dler"
     },
     vip_users = {188364722}, --vip users
