@@ -163,7 +163,7 @@ function run(msg, matches)
 	end
 end
 return {
-advan = "https://github.com/Tarfand-pro/css",
+AntiSpam99 = "https://github.com/AntiSpam99/AntiSpam",
 patterns = {"^[!#/](help)$","^[!#/]([Ss]ethelp) (.*)$","^[!#/](delhelp)$"},
 run = run,
 }
