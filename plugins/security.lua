@@ -10,7 +10,7 @@
   else
     data[tostring(target)]['settings']['lock_media'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Media posting has been locked'
+    return 'Media posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -24,7 +24,7 @@ local function unlock_group_media(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_media'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Media posting has been unlocked'
+    return 'Media posting has been unlocked Powered By @To_My_Amigos'
   end
 end
     
@@ -40,7 +40,7 @@ end
     save_data(_config.moderation.data, data)
     local hash = 'fwd:'..msg.to.id
     redis:set(hash, true)
-    return 'Forward has been locked'
+    return 'Forward has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -56,7 +56,7 @@ local function unlock_group_fwd(msg, data, target)
     save_data(_config.moderation.data, data)
     local hash = 'fwd:'..msg.to.id
     redis:del(hash)
-    return 'Forward has been unlocked'
+    return 'Forward has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -72,7 +72,7 @@ local function lock_group_reply(msg, data, target)
     save_data(_config.moderation.data, data)
     local hash2 = 'reply:'..msg.to.id
     redis:set(hash2, true)
-    return 'reply posting has been locked'
+    return 'reply posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -88,7 +88,7 @@ local function unlock_group_reply(msg, data, target)
     save_data(_config.moderation.data, data)
     local hash2 = 'reply:'..msg.to.id
     redis:del(hash2)
-    return 'reply posting has been unlocked'
+    return 'reply posting has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -102,7 +102,7 @@ local function lock_group_share(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_share'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'share posting has been locked'
+    return 'share posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -116,7 +116,7 @@ local function unlock_group_share(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_share'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'share posting has been unlocked'
+    return 'share posting has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -130,7 +130,7 @@ local function lock_group_tag(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_tag'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'tag posting has been locked'
+    return 'tag posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -144,7 +144,7 @@ local function unlock_group_tag(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_tag'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'tag posting has been unlocked'
+    return 'tag posting has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -158,7 +158,7 @@ local function lock_group_bots(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_bots'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'bots has been locked'
+    return 'bots has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -172,7 +172,7 @@ local function unlock_group_bots(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_bots'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'bots has been unlocked'
+    return 'bots has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -186,7 +186,7 @@ local function lock_group_number(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_number'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'number posting has been locked'
+    return 'number posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -200,7 +200,7 @@ local function unlock_group_number(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_number'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'number posting has been unlocked'
+    return 'number posting has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -214,7 +214,7 @@ local function lock_group_poker(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_poker'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'poker posting has been locked'
+    return 'poker posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -228,7 +228,7 @@ local function unlock_group_poker(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_poker'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'poker posting has been unlocked'
+    return 'poker posting has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -246,7 +246,7 @@ end
 		mute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_audio'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'audio posting has been locked'
+    return 'audio posting has been locked Powered By @To_My_Amigos'
     end
   end
 end
@@ -265,7 +265,7 @@ local function unlock_group_audio(msg, data, target)
 		unmute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_audio'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'audio posting has been unlocked'
+    return 'audio posting has been unlocked Powered By @To_My_Amigos'
     end
   end
 end
@@ -284,7 +284,7 @@ end
 		mute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_photo'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'photo posting has been locked'
+    return 'photo posting has been locked Powered By @To_My_Amigos'
     end
   end
 end
@@ -303,7 +303,7 @@ local function unlock_group_photo(msg, data, target)
 		unmute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_photo'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'photo posting has been unlocked'
+    return 'photo posting has been unlocked Powered By @To_My_Amigos'
     end
   end
 end
@@ -322,7 +322,7 @@ end
 		mute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_video'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'video posting has been locked'
+    return 'video posting has been locked Powered By @To_My_Amigos'
     end
   end
 end
@@ -341,7 +341,7 @@ local function unlock_group_video(msg, data, target)
 		unmute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_video'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'video posting has been unlocked'
+    return 'video posting has been unlocked Powered By @To_My_Amigos'
     end
   end
 end
@@ -360,7 +360,7 @@ end
 		mute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_documents'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'documents posting has been locked'
+    return 'documents posting has been locked Powered By @To_My_Amigos'
     end
   end
 end
@@ -379,7 +379,7 @@ local function unlock_group_documents(msg, data, target)
 		unmute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_documents'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'documents posting has been unlocked'
+    return 'documents posting has been unlocked Powered By @To_My_Amigos'
     end
   end
 end
@@ -398,7 +398,7 @@ end
 		mute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_text'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'text posting has been locked'
+    return 'text posting has been locked Powered By @To_My_Amigos'
     end
   end
 end
@@ -417,7 +417,7 @@ local function unlock_group_text(msg, data, target)
 		unmute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_text'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'text posting has been unlocked'
+    return 'text posting has been unlocked Powered By @To_My_Amigos'
     end
   end
 end
@@ -436,7 +436,7 @@ end
 		mute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_all'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'all posting has been locked'
+    return 'all posting has been locked Powered By @To_My_Amigos'
     end
   end
 end
@@ -455,7 +455,7 @@ local function unlock_group_all(msg, data, target)
 		unmute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_all'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'all posting has been unlocked'
+    return 'all posting has been unlocked Powered By @To_My_Amigos'
     end
   end
 end
@@ -474,7 +474,7 @@ end
 		mute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_gifs'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'gifs posting has been locked'
+    return 'gifs posting has been locked Powered By @To_My_Amigos'
     end
   end
 end
@@ -493,7 +493,7 @@ local function unlock_group_gifs(msg, data, target)
 		unmute(chat_id, msg_type)
     data[tostring(target)]['settings']['lock_gifs'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'gifs posting has been unlocked'
+    return 'gifs posting has been unlocked Powered By @To_My_Amigos'
     end
   end
 end
@@ -508,7 +508,7 @@ local function lock_group_inline(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_inline'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'inline posting has been locked'
+    return 'inline posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -522,7 +522,7 @@ local function unlock_group_inline(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_inline'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'inline posting has been unlocked'
+    return 'inline posting has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -536,7 +536,7 @@ local function lock_group_cmd(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_cmd'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'cmd posting has been locked'
+    return 'cmd posting has been locked Powered By @To_My_Amigos'
   end
 end
 
@@ -550,7 +550,7 @@ local function unlock_group_cmd(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_cmd'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'cmd posting has been unlocked'
+    return 'cmd posting has been unlocked Powered By @To_My_Amigos'
   end
 end
 
@@ -1243,4 +1243,4 @@ return {
 	run = run
 }
 --End security.lua
---By @Rondoozle
+--By @To_My_Amigos
