@@ -1,4 +1,4 @@
---Start tools.lua by @janlou
+--Start tools.lua by @To_My_Amigos
 --[[Plugins:
 savefile
 saveplug
@@ -9,7 +9,7 @@ onservice
 setteam
 setsudo
 addsudo
-clean deleted (Thanks to @Blackwolf_admin)
+clean deleted 
 filter
 hyper & bold & italic & code
 addplug
@@ -347,7 +347,7 @@ function run(msg, matches)
   file:write(text)
   file:flush()
   file:close()
-  return "You can use it:\n!mynote\n\nYour note has been changed to:\n"..text.."\n\n"..team..'\n<a href="'..channel..'">Join us</a>'
+  return "You can use it:\n!mynote\n\nYour note has been changed to:\n"..text.."\n\n"..team..'\n'..channel..'\n"Join us'
  end
  
    if matches[1] == "mynote" then
