@@ -45,6 +45,8 @@ Phone Number : +989213985504
 - <p align="left">Lock rtl
 - <p align="left">Lock strict
 - <p align="left">Lock tgservice
+- <p align="left">Time
+- <p align="left">Mute-all
 - <p align="left">Public & members
 - <p align="left">Show mutes list in settings
 - <p align="left">And ...
