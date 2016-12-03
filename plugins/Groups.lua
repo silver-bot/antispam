@@ -68,7 +68,8 @@ return {
     usage = "!link ID && !groups",
     AntiSpam99 = {
     	"Created by: @To_My_Amigos",
-    	"CopyRight all right reserved",
+	"Powered by: @To_My_Amigos",
+    	"CopyRight all right reserved"
     },
 patterns = {
 	"^[!#/]([Ll]ink) (.*)$",
