@@ -230,6 +230,7 @@ function create_config( )
     "sudo",
     "supergroup",
     "language",
+    "broadcast",
     "whitelist",
     "tools",
     "chat",
