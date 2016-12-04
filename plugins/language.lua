@@ -147,12 +147,12 @@ Powered By @To_My_Amigos
 ]]
 end
   elseif not is_sudo(msg) then
- return "You cant change language (just for sudo!)"
+ return "You cant change language (just for sudo)"
 end
 end
  return {
  AntiSpam99 = {
- "Powered By @To_My_Amigos"
+ "Powered By @To_My_Amigos",
  "CopyRight all right reserved",
  },
  patterns = {
