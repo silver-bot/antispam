@@ -29,7 +29,7 @@ function run(msg, matches)
       sysa:flush()
       sysa:close()
 	  reload_plugins( )
-	  return "<i>زبان سوپرگپ با موفقیت به فارسی با دستورات انگلیسی تغییر کرد</i>"
+	  return "زبان سوپرگپ با موفقیت به فارسی با دستورات انگلیسی تغییر کرد"
 elseif matches[1] == "setlang" and matches[2] == "en" then
     redis:set("sp:lang", "en")
     file = http.request("http://bayanbox.ir/view/4099032741231664287/supergroup-en.txt")
@@ -52,7 +52,7 @@ elseif matches[1] == "setlang" and matches[2] == "en" then
       sysb:flush()
       sysb:close()
 	  reload_plugins( )
-	  return "<i>Supergroup language has been changed</i>"
+	  return "Supergroup language has been changed"
 elseif matches[1] == "setlang" and matches[2] == "فا" then
     redis:set("sp:lang", "فا")
     file = http.request("http://bayanbox.ir/view/3735135937495964143/supergroup-farsi.txt")
@@ -75,7 +75,7 @@ elseif matches[1] == "setlang" and matches[2] == "فا" then
       sysc:flush()
       sysc:close()
 	  reload_plugins( )
-      return "<i>زبان سوپرگپ با موفقیت به فارسی با دستورات فارسی تغییر کرد</i>"
+      return "زبان سوپرگپ با موفقیت به فارسی با دستورات فارسی تغییر کرد"
 end
 end
 
@@ -93,7 +93,7 @@ if msg.to.type == 'chat' then
       filea:flush()
       filea:close()
 	  reload_plugins( )
-	 return "<i>زبان گپ معمولی با موفقیت  به فارسی با دستورات انگلیسی تغییر کرد</i>"
+	 return "زبان گپ معمولی با موفقیت  به فارسی با دستورات انگلیسی تغییر کرد"
  elseif matches[1] == "setlang" and matches[2] == "en" then
     redis:set("gp:lang", "en")
     file = http.request("http://bayanbox.ir/view/9218214967477606880/1475331538.txt")
@@ -121,7 +121,7 @@ if msg.to.type == 'chat' then
       filec:flush()
       filec:close()
 	  reload_plugins( )
-       return "<i>زبان گپ معمولی با موفقیت به فارسی با دستورات فارسی تغییر کرد</i>"
+       return "زبان گپ معمولی با موفقیت به فارسی با دستورات فارسی تغییر کرد"
 end
  end
 
@@ -142,6 +142,8 @@ Change language to English
  	
 ⚓️ !setlang فا
 تغییر زبان به فارسی با دستورات فارسی
+
+Powered By @To_My_Amigos			
 ]]
 end
   elseif not is_sudo(msg) then
@@ -150,10 +152,11 @@ end
 end
  return {
  AntiSpam99 = {
+ "Powered By @To_My_Amigos"
  "CopyRight all right reserved",
  },
  patterns = {
-    "^[!#/](setlang) (fa)$",
+           "^[!#/](setlang) (fa)$",
 	   "^[!#/](setlang) (en)$",
 	   "^[!#/](setlang) (فا)$",
 	   "^[!#/](lang) (list)$",
