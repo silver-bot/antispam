@@ -238,18 +238,18 @@ function create_config( )
     "time",
     "dler"
     },
-    vip_users = {188364722}, --vip users
-    sudo_users = {188364722,tonumber(our_id)},--Sudo users
+    vip_users = {105413662}, --vip users
+    sudo_users = {105413662,tonumber(our_id)},--Sudo users
     support_gp = {},--Support id
     moderation = {data = 'data/adv.json'},
     about_text = [[
 		
-Clone : https://github.com/AntiSpam99/AntiSpam.git
+Clone : https://github.com/silver-bot/AntiSpam.git
 This is an original bot and based on (AntiSpam , version 4 final).
 Copyright all right reserved and you must respect all laws.
 جهت سفارش ساخت یا خرید ربات و نصب بر روی سرور با آیدی یا شماره زیر در ارتباط باشید
-Creator : @To_My_Amigos
-Phone Number : +989213985504
+Creator : @as0012
+Phone Number : +989224791096
 ]],
 
     --Start rate:
