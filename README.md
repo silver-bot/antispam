@@ -3,12 +3,11 @@
 
 جمع آوری شده توسط کیا پشنگ
 
-آیدی تگرام : @To_My_Amigos
+آیدی تگرام : @as0012
 
 فروش و ساخت ربات ضداسپم و ضدلینک به صورت ماهانه و قیمت مناسب و نصب روی سرور
 
-Phone Number : +989213985504
-
+Phone Number : +989224791096
 
 ## You can create an account for free in:
 |Rank | Name | Adress |
@@ -68,7 +67,7 @@ Phone Number : +989213985504
 |:-----------------------|
 - <p align="left">Clone Source:
 ```sh
-git clone https://github.com/AntiSpam99/AntiSpam.git && cd AntiSpam
+git clone https://github.com/silver-bot/AntiSpam.git && cd AntiSpam
 ```
 - <p align="left">install bot:
 ```sh
