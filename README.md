@@ -75,13 +75,7 @@ chmod 700 start.sh
 ./start.sh install
 y
 
-./strat.sh
-
-./start.api
-
-./start.icli
-
-./start.self
+./start.sh
 ```
 | ANTI CRASH |
 |:-----------------------|
