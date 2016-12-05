@@ -74,6 +74,14 @@ git clone https://github.com/silver-bot/AntiSpam.git && cd AntiSpam
 chmod 700 start.sh
 ./start.sh install
 y
+
+./strat.sh
+
+./start.api
+
+./start.icli
+
+./start.self
 ```
 | ANTI CRASH |
 |:-----------------------|
