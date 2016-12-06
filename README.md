@@ -67,6 +67,14 @@ Phone Number : +989224791096
 |:-----------------------|
 - <p align="left">Clone Source:
 ```sh
+
+cd $home
+
+
+
+rm -rf ~/.telegram-cli
+
+
 git clone https://github.com/silver-bot/AntiSpam.git && cd AntiSpam
 ```
 - <p align="left">install bot:
