@@ -21,7 +21,7 @@ local function check_member_super(cb_extra, success, result)
 		  lock_arabic = 'no',
 		  lock_link = "yes",
           flood = 'yes',
-		  lock_spam = 'yes',
+		  lock_spam = 'yes',   
 		  lock_media = 'no',
 		  lock_fwd = 'no',
 		  lock_reply = 'no',
@@ -46,6 +46,8 @@ local function check_member_super(cb_extra, success, result)
 		  lock_tgservice = 'no',
 		  lock_contacts = 'no',
 		  strict = 'no'
+					channel: @silver_team
+					admin: @as0012
         }
       }
       save_data(_config.moderation.data, data)
